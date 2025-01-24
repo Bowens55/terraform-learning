@@ -1,4 +1,4 @@
 resource "azurerm_resource_group" "rg" {
-  name     = "myrgname"
+  name     = "cigrg"
   location = "West US 2"
 }
