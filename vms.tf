@@ -24,7 +24,7 @@ resource "azurerm_network_interface" "vm-nic" {
 
 resource "azurerm_linux_virtual_machine" "vms" {
   count               = 3
-  name                = "${local.prefix}-${count.index}"
+  name                = "${local.prefix}-vm-${count.index}"
   resource_group_name = azurerm_resource_group.rg.name
   location            = var.location
   size                = "Standard_F2"
