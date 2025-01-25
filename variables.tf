@@ -30,6 +30,6 @@ variable "subscription_id" {
 }
 
 locals {
-  location_prefix = substr(var.location, 0, 3)
+  location_prefix = lower(substr(var.location, 0, 3))
   prefix          = "${var.env}-${local.location_prefix}-example"
 }
