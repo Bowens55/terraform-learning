@@ -48,4 +48,3 @@ resource "azurerm_linux_virtual_machine" "vms" {
     version   = "latest"
   }
 }
-
